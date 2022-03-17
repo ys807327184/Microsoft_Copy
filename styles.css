@@ -1,0 +1,316 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+body {
+  font-size: 15px;
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  min-width: 310px;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  background: #f2f2f2;
+  color: #616161;
+}
+
+.outer-container {
+  margin: 0 auto;
+  max-width: calc(1600px + 10%);
+  padding: 0 5%;
+}
+
+.row-3-heading, .card-heading, .card-expand, .footer-nav-heading {
+  font-weight: 600;
+}
+
+.row-3-heading {
+  font-size: 24px;
+  line-height: 28px;
+  padding: 48px 0 4px;
+  margin-bottom: 16px;
+}
+
+.card-1, .footer-nav-lead {
+  padding-left: 0;
+}
+
+.card-1 {
+  padding-right: 18px;
+}
+
+.card-2, .card-heading, .card-paragraph, .social-media-text, .footer-nav-lead {
+  padding-right: 12px;
+}
+
+.card-2 {
+  padding-left: 6px;
+}
+
+.card-3 {
+  padding-left: 12px;
+  padding-right: 6px;
+}
+
+.card-4 {
+  padding-left: 18px;
+  padding-right: 0px;
+}
+
+.card-highlight, .social-media-text, .footer-nav-heading {
+  line-height: 20px;
+}
+
+.card-highlight {
+  padding: 3px 14px 5px;
+  margin: 12px 0 4px;
+  height: 26px;
+  width: 56.844px;
+  font-weight: 400;
+  background-color: #ffd800;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 0.075em;
+  text-overflow: ellipsis;
+}
+
+.card-heading, .bi-globe {
+  font-size: 20px;
+}
+
+.card-heading {
+  margin: 0;
+}
+
+.card-heading {
+  line-height: 24px;
+  opacity: 0.95;
+  padding-bottom: 2px;
+}
+
+.card-paragraph {
+  padding-top: 2px;
+  margin-bottom: 0;
+}
+
+.card-expand {
+  padding: 10px 3px 7px 0;
+  border: 2px solid transparent;
+  outline: 1px solid transparent;
+  outline-offset: -3px;
+  color: #0067b8;
+  background: transparent;
+  text-align: left;
+}
+
+.not-new {
+  margin-top: 42px;
+}
+
+.main-social-media, .footer-base, .footer-base-lang-selector {
+  display: flex;
+}
+
+.main-social-media, .footer-base-lang-selector {
+  align-items: center;
+}
+
+.main-social-media {
+  padding: 48px 5% 0;
+}
+
+.social-media-text {
+  color: rgba(0,0,0,.6);
+  margin-bottom: 4px;
+}
+
+.social-media-img-container {
+  margin-right: 12px;
+  border: 2px solid transparent;
+  width: 32px;
+  height: 32px;
+}
+
+.social-media-img:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+.footer-nav-group {
+  margin-top: 48px;
+}
+
+.footer-nav {
+  padding: 0 12px;
+}
+
+.footer-nav-item:last-child {
+  margin-bottom: 8px;
+}
+
+.footer-nav, .footer-nav-lead {
+  vertical-align: text-top;
+}
+
+.footer-nav-heading {
+  padding: 36px 0 4px;
+}
+
+.footer-nav-item, .footer-base, .lang-selector-text {
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.footer-nav-item {
+  padding: 8px 0;
+}
+
+.footer-base {
+  padding: 30px 5% 16px;
+  flex-wrap: wrap;
+}
+
+.footer-base-lang-selector {
+  width: 161px;
+  padding-right: 23px;
+  margin-right: auto;
+}
+
+.bi-globe {
+  margin-right: 8px;
+}
+
+.footer-base-nav {
+  margin: 3px 0;
+}
+
+.footer-base-nav-item {
+  display: inline-block;
+  padding-right: 24px;
+  padding-bottom: 4px;
+}
+
+.footer-nav-item:hover, .footer-base-lang-selector:hover, .footer-base-nav-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main-card:hover img {
+  opacity: 90%;
+}
+
+.main-card {
+  cursor: pointer;
+}
+
+.card-expand-hover:hover {
+  border-bottom: solid 2px;
+  margin-right: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.main-slide-2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.slide-2-text {
+  position: absolute;
+  top: calc(40%);
+}
+
+@media only screen and (max-width: 992px) {
+  /*
+  body padding
+  4 columes to 2 columes cards
+  footer 6 columns to 3 columns
+  */
+  .main-slide-2 {
+    padding: 0;
+  }
+
+  .main-row-3 {
+    padding: 0 3%;
+  }
+
+  .row-3-heading, .card-1, .card-2, .card-3, .card-4, .footer-nav-lead {
+    padding-left: 12px;
+  }
+
+  .card-1, .card-2, .card-3, .card-4 {
+    padding-right: 12px;
+  }
+
+  .card-3, .card-4 {
+    margin-top: 48px;
+  }
+
+  .main-social-media, .footer-base {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .footer-nav-group {
+    padding: 0 12px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  /*
+  Sale, Support hidden
+  */
+}
+
+@media only screen and (max-width: 893px) {
+  /*
+  Xbox hidden
+  */
+}
+
+@media only screen and (max-width: 860px) {
+  /*
+  All hidden
+  */
+}
+
+@media only screen and (max-width: 767px) {
+  /*
+  move text to bottom carousel
+  Choose your MS365 row to column
+  move text to bottom Xbox controller
+  footer nav goes down
+  */
+  .footer-base {
+    display: block;
+  }
+
+  .footer-base-nav {
+    margin-top: 12px;
+  }
+
+  .footer-base-nav-item {
+    padding: 6px 4px 0 6px;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /*
+  move text to bottom carousel
+  Choose your MS365 row to column
+  move text to bottom Xbox controller
+  2 columns to 1 column cards
+  footer 3 columns to 1 column
+  */
+  .main-row-3 {
+    padding: 0 2%;
+  }
+
+  .footer-base-nav-item {
+    padding: 6px 10px 0 0;
+  }
+}
