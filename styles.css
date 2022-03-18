@@ -24,7 +24,7 @@ footer {
 
 .slide-2-heading {
   padding-bottom: 3px;
-  font-size: 24px;
+  font-size: 34px;
   line-height: 28px;
   max-height: 56px;
   font-weight: 600;
@@ -246,7 +246,7 @@ footer {
   cursor: pointer;
 }
 
-.card-expand-hover:hover {
+.card-expand-hover:hover, .slide-2-button-hover:hover {
   border-bottom: solid 2px;
   margin-right: 5px;
   transition: all 200ms ease-in-out;
@@ -262,8 +262,45 @@ footer {
 
 .slide-2-text {
   position: absolute;
-  top: calc(30%);
+  top: calc(35%);
   margin-left: 6%;
+  max-width: 520px;
+}
+
+.slide-2-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 88%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main-slide-2:hover{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1399px) {
+  .slide-2-text {
+    max-width: 440px;
+  }
+
+  .slide-2-heading {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1083px) {
+  .slide-2-text {
+    max-width: 340px;
+    margin-left: 0;
+  }
+
+  .main-slide-2 {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -337,6 +374,34 @@ footer {
 
   .footer-base-nav-item {
     padding: 6px 4px 0 6px;
+  }
+
+  .slide-2-container {
+    position: relative;
+    height: 320px;
+    background-color: #e6e6e6;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .slide-2-text {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .slide-2-heading {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .slide-2-picture {
+    width: 100%;
+  }
+
+  .slide-2-container {
+    width: 100%;
   }
 }
 
