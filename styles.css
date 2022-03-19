@@ -22,6 +22,14 @@ footer {
   padding: 0 5%;
 }
 
+.main-row-2 {
+  padding-top: 12px;
+}
+
+.row-2-card {
+  margin-top: 48px;
+}
+
 .slide-2-heading {
   padding-bottom: 3px;
   font-size: 34px;
@@ -144,6 +152,7 @@ footer {
   color: #0067b8;
   background: transparent;
   text-align: left;
+  display: inline-block;
 }
 
 .not-new {
@@ -313,7 +322,7 @@ footer {
     padding: 0;
   }
 
-  .main-row-3 {
+  .main-row-3, .main-row-2 {
     padding: 0 3%;
   }
 
@@ -413,7 +422,7 @@ footer {
   2 columns to 1 column cards
   footer 3 columns to 1 column
   */
-  .main-row-3 {
+  .main-row-3, .main-row-2 {
     padding: 0 2%;
   }
 
