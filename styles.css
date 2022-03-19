@@ -22,6 +22,43 @@ footer {
   padding: 0 5%;
 }
 
+.main-row-1 {
+  padding-top: 48px;
+  text-align: center;
+}
+
+.row-1-item {
+  display: inline-block;
+  width: 184px;
+  padding: 12px 6px;
+  min-height: 44px;
+  position: relative;
+  border: 2px solid transparent;
+  outline: 1px solid transparent;
+  vertical-align: top;
+}
+
+.row-1-img {
+  max-width: none;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+.row-1-text {
+  font-size: 15px;
+  font-weight: 600;
+  margin: auto;
+  max-height: 60px;
+  line-height: 20px;
+  width: 125px;
+  position: relative;
+  text-align: center;
+  white-space: normal;
+}
+
 .main-row-2 {
   padding-top: 12px;
 }
@@ -267,11 +304,12 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
+  padding-top: 48px;
 }
 
 .slide-2-text {
   position: absolute;
-  top: calc(35%);
+  top: calc(50%);
   margin-left: 6%;
   max-width: 520px;
 }
@@ -298,6 +336,13 @@ footer {
 
   .slide-2-heading {
     font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .main-row-1 {
+    overflow: auto;
+    white-space: nowrap;
   }
 }
 
