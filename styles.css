@@ -38,6 +38,7 @@ footer {
   outline: 2px solid transparent;
   outline-offset: -2px;
   border: 0;
+  order: 0;
 }
 
 .logo img {
@@ -45,6 +46,33 @@ footer {
   width: 108px;
   height: auto;
   vertical-align: middle;
+}
+
+.header-nav {
+  height: 100%;
+  padding-left: 2px;
+  padding-right: 1px;
+  font-size: 13px !important;
+  order: 1;
+}
+
+.header-nav i {
+  display: inline-block;
+}
+
+.header-nav-item {
+  display: inline-block;
+  word-break: break-word;
+  border: 1px solid transparent;
+  color: #262626;
+  margin-top: 1px;
+  padding: 16px 8px 10px;
+  height: 48px;
+  outline-offset: -2px;
+}
+
+#button-more {
+  display: none;
 }
 
 .slide-highlight {
@@ -59,6 +87,10 @@ footer {
   margin-bottom: 3px;
   font-weight: 600;
   width: 104px;
+}
+
+#longer-button {
+  width: 221px;
 }
 
 .main-row-1 {
@@ -467,12 +499,26 @@ footer {
   /*
   Sale, Support hidden
   */
+  #button-sale {
+    display: none;
+  }
+
+  #button-support {
+    display: none;
+  }
+
+  #button-more {
+    display: inline-block;
+  }
 }
 
 @media only screen and (max-width: 893px) {
   /*
   Xbox hidden
   */
+  #button-xbox {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 859px) {
@@ -490,6 +536,11 @@ footer {
     padding: 12px 4px;
     position: absolute;
     left: calc(50% - 60px);
+    order: 2;
+  }
+
+  .header-nav {
+    display: none;
   }
 }
 
