@@ -22,6 +22,15 @@ footer {
   padding: 0 5%;
 }
 
+.header-box {
+  display: flex;
+}
+
+.logo {
+  margin: 1px 0 0 0;
+  padding: 16px 10px 16px 6px;
+}
+
 .slide-highlight {
   background: #fef000;
   color: #000000;
@@ -111,6 +120,7 @@ footer {
 }
 
 .slide-2-button {
+  width: 136px;
   margin: 24px 0 0 2px;
   padding: 8px 20px 8px 20px;
   color: #fff;
@@ -316,8 +326,8 @@ footer {
 }
 
 .card-expand-hover:hover, .slide-2-button-hover:hover {
-  border-bottom: solid 2px;
-  margin-right: 5px;
+  text-decoration: underline 2px;
+  margin-right: 4px;
   transition: all 200ms ease-in-out;
 }
 
