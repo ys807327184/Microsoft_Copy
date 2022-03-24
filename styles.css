@@ -129,6 +129,10 @@ footer {
   margin-top: 1px;
 }
 
+.header-collapse-button .bi-chevron-up {
+  display: none;
+}
+
 .header-collapse-button i, .header-search-button i, .header-search-button-text, .header-shopping-cart-button i, .header-shopping-cart-button-text, .header-account-button i, .header-account-button-text {
   display: inline-block;
 }
@@ -517,6 +521,48 @@ footer {
   cursor: pointer;
 }
 
+.header-collapse-expand {
+  z-index: 999;
+  position: absolute;
+  background-color: #f2f2f2;
+  border-color: rgba(0,0,0,.05) rgba(0,0,0,.05) #000;
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  top: 53.5px;
+  right: 0;
+  display: none;
+}
+
+.header-collapse-expand-column {
+  display: inline-block;
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+.expand-column-heading {
+  font-weight: 600;
+  padding: 18px 0 18px 24px;
+  width: 195px;
+  font-size: 13px;
+}
+
+.expand-column-item {
+  color: #262626;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 195px;
+  padding-left: 24px;
+}
+
+.view-sitemap {
+  background-color: #e6e6e6;
+  color: rgba(0,0,0,.8);
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+}
+
 @media only screen and (max-width: 1399px) {
   .slide-1-text, .slide-2-text {
     max-width: 440px;
@@ -683,6 +729,10 @@ footer {
   }
 
   .header-collapse {
+    display: none;
+  }
+
+  .header-collapse-expand {
     display: none;
   }
 
