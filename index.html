@@ -19,19 +19,25 @@
         <div class="header-nav-item">Office</div>
         <div class="header-nav-item">Windows</div>
         <div class="header-nav-item">Surface</div>
-        <div class="header-nav-item" id="button-xbox">Xbox</div>
+        <div class="header-nav-item button-xbox" id="button-xbox">Xbox</div>
         <div class="header-nav-item" id="button-sale">Sale</div>
         <div class="header-nav-item" id="button-support">Support</div>
         <div class="header-nav-item" id="button-more">
-          More
-          <i class="bi bi-chevron-down"></i>
+          <div class="button-more-text">More</div>
+          <i class="bi bi-chevron-down" id="button-more-chevron-down"></i>
+          <i class="bi bi-chevron-up" id="button-more-chevron-up"></i>
+          <div class="button-more-expand" id="button-more-expand">
+            <div class="button-more-expand-item" id="button-xbox-expand" style="display: none;">Xbox</div>
+            <div class="button-more-expand-item">Sale</div>
+            <div class="button-more-expand-item">Support</div>
+          </div>
         </div>
       </div>
-      <div class="header-collapse">
+      <div class="header-collapse" id="header-collapse">
         <div class="header-collapse-button" id="header-collapse-button">
           All Microsoft
-          <i class="bi bi-chevron-down"></i>
-          <i class="bi bi-chevron-up"></i>
+          <i class="bi bi-chevron-down" id="header-collapse-button-chevron-down"></i>
+          <i class="bi bi-chevron-up" id="header-collapse-button-chevron-up"></i>
         </div>
       </div>
       <div class="header-search">
