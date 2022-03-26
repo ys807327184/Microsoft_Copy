@@ -245,3 +245,18 @@ expandable6.onclick = function() {
     expanded6.classList.add("display-hide");
   }
 }
+
+//horizontal scroll button
+const btn_previous = document.querySelector(".row-left");
+const btn_next = document.querySelector(".row-right");
+const wrapper = document.querySelector(".main-row-1");
+const max_scroll = wrapper.scrollWidth;
+function test(event) {
+  if (event.target.classList.contains("row-right")) {
+    wrapper.scroll(max_scroll, 0);
+  } else if (event.target.classList.contains("row-left")) {
+    wrapper.scroll((-1 * max_scroll), 0);
+  }
+}
+btn_previous.addEventListener("click", test);
+btn_next.addEventListener("click", test);
