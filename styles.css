@@ -735,6 +735,27 @@ footer {
   padding-left: 45px !important;
 }
 
+.logo:hover, .header-nav-item:hover, .header-collapse-button:hover, .header-search-button:hover, .header-shopping-cart-button:hover, .header-account-button:hover, .expand-column-item:hover, .view-sitemap:hover, .button-more-expand-item:hover, .header-list:hover, .search-bar-search:hover, .search-bar-cancel:hover, .search-bar-search-sm:hover, .search-bar-cancel-sm:hover, .list-item:hover {
+  cursor: pointer;
+}
+
+.header-nav-item:hover, .header-collapse-button:hover, .header-search-button-text:hover, .header-shopping-cart-button-text:hover, .button-more-text:hover {
+  text-decoration: underline solid 2px;
+}
+
+.expand-column-item:hover, .view-sitemap:hover {
+  text-decoration: underline !important;
+}
+
+#button-more:hover {
+  text-decoration: none;
+}
+
+.button-more-expand-item:hover {
+  text-decoration: underline;
+  background-color: #e6e6e6;
+}
+
 @media only screen and (min-width: 860px) {
   .search-bar-cancel-sm, .search-bar-search-sm, .search-bar-sm-container, .header-list-expand {
     display: none !important;

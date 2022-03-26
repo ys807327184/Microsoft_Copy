@@ -64,6 +64,7 @@ var search_bar_search = document.getElementById("search-bar-search");
 var search_bar_cancel_sm = document.getElementById("search-bar-cancel-sm");
 var search_bar_search_sm = document.getElementById("search-bar-search-sm");
 var search_bar_sm_container = document.getElementById("search-bar-sm-container");
+var search_bar_sm = document.getElementById("search-bar-sm");
 
 header_search_button.onclick = function() {
   if (screen.width > 859) {
@@ -80,6 +81,7 @@ header_search_button.onclick = function() {
     search_bar_cancel_sm.style.display = "inline-block";
     search_bar_search_sm.style.display = "inline-block";
     search_bar_sm_container.style.display = "inline-block";
+    search_bar_sm.focus();
   }
 }
 
