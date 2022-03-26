@@ -756,6 +756,64 @@ footer {
   background-color: #e6e6e6;
 }
 
+.carousel-left, .carousel-right {
+  display: none;
+}
+
+.main-slide-1:hover .carousel-left, .main-slide-1:hover .carousel-right {
+  display: block;
+}
+
+.carousel-left {
+  opacity: .8;
+  box-shadow: none;
+  background: #fafafa;
+  color: #404040;
+  z-index: 100;
+  border: 1px solid #dbdbdb;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 23px;
+  padding-top: 1px;
+}
+
+.carousel-left i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+}
+
+.carousel-left:hover {
+  box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+}
+
+.carousel-right {
+  opacity: .8;
+  box-shadow: none;
+  background: #fafafa;
+  color: #404040;
+  z-index: 100;
+  border: 1px solid #dbdbdb;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 23px;
+  padding-top: 1px;
+}
+
+.carousel-right i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+}
+
+.carousel-right:hover {
+  box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+}
+
 @media only screen and (min-width: 860px) {
   .search-bar-cancel-sm, .search-bar-search-sm, .search-bar-sm-container, .header-list-expand {
     display: none !important;
