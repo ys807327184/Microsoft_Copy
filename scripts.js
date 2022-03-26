@@ -52,3 +52,37 @@ button_more.onclick = function() {
 
   }
 }
+
+//search button
+var header_search_button = document.getElementById("header-search-button");
+var header_nav = document.getElementById("header-nav");
+var header_shopping_cart = document.getElementById("header-shopping-cart");
+var header_account = document.getElementById("header-account");
+var search_bar_cancel = document.getElementById("search-bar-cancel");
+var search_bar = document.getElementById("search-bar");
+var search_bar_search = document.getElementById("search-bar-search");
+
+header_search_button.onclick = function() {
+  if (screen.width > 859) {
+    header_nav.style.display = "none";
+    header_collapse.style.display = "none";
+    header_shopping_cart.style.display = "none";
+    header_account.style.display = "none";
+    header_search_button.style.display = "none";
+    search_bar.style.display = "inline-block";
+    search_bar_cancel.style.display = "inline-block";
+    search_bar_search.style.display = "inline-block";
+    search_bar.focus();
+  }
+}
+
+search_bar_cancel.onclick = function() {
+  header_nav.style.display = "inline-block";
+  header_collapse.style.display = "inline-block";
+  header_shopping_cart.style.display = "inline-block";
+  header_account.style.display = "inline-block";
+  header_search_button.style.display = "inline-block";
+  search_bar.style.display = "none";
+  search_bar_cancel.style.display = "none";
+  search_bar_search.style.display = "none";
+}
