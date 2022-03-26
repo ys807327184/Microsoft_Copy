@@ -62,7 +62,7 @@ footer, .button-more-expand, .header-list-expand {
   padding: 6px 0 8px 0;
 }
 
-.header-list i, .main-row-1, .row-1-item, .row-1-text, .main-slide-1, .main-slide-2, .row-left i, .row-right i {
+.header-list i, .main-row-1, .row-1-item, .row-1-text, .main-slide-1, .main-slide-2, .row-left i, .row-right i, .header-box {
   position: relative;
 }
 
