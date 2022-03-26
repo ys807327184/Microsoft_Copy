@@ -99,3 +99,147 @@ search_bar_cancel_sm.onclick = function() {
   search_bar_search_sm.style.display = "none";
   search_bar_sm_container.style.display = "none";
 }
+
+//header list
+var header_list = document.getElementById("header-list");
+var header_list_expand = document.getElementById("header-list-expand");
+var list_expand = document.getElementById("list-expand");
+var list_close = document.getElementById("list-close");
+
+header_list.onclick = function() {
+  if (header_list_expand.style.display != "inline-block") {
+    list_expand.style.display = "none";
+    list_close.style.display = "unset";
+    header_list_expand.style.display = "inline-block";
+  } else {
+    list_expand.style.display = "unset";
+    list_close.style.display = "none";
+    header_list_expand.style.display = "none";
+  }
+}
+
+var expandable1 = document.getElementById("expandable1");
+var expanded1 = document.getElementById("expanded1");
+
+expandable1.onclick = function() {
+  if (expandable1.children[1].classList.contains("display-visible")) {
+    expandable1.children[1].classList.remove("display-visible");
+    expandable1.children[1].classList.add("display-hide");
+    expandable1.children[2].classList.remove("display-hide");
+    expandable1.children[2].classList.add("display-visible");
+    expanded1.classList.remove("display-hide");
+    expanded1.classList.add("display-visible");
+  } else {
+    expandable1.children[1].classList.remove("display-hide");
+    expandable1.children[1].classList.add("display-visible");
+    expandable1.children[2].classList.remove("display-visible");
+    expandable1.children[2].classList.add("display-hide");
+    expanded1.classList.remove("display-visible");
+    expanded1.classList.add("display-hide");
+  }
+}
+
+var expandable2 = document.getElementById("expandable2");
+var expanded2 = document.getElementById("expanded2");
+
+expandable2.onclick = function() {
+  if (expandable2.children[1].classList.contains("display-visible")) {
+    expandable2.children[1].classList.remove("display-visible");
+    expandable2.children[1].classList.add("display-hide");
+    expandable2.children[2].classList.remove("display-hide");
+    expandable2.children[2].classList.add("display-visible");
+    expanded2.classList.remove("display-hide");
+    expanded2.classList.add("display-visible");
+  } else {
+    expandable2.children[1].classList.remove("display-hide");
+    expandable2.children[1].classList.add("display-visible");
+    expandable2.children[2].classList.remove("display-visible");
+    expandable2.children[2].classList.add("display-hide");
+    expanded2.classList.remove("display-visible");
+    expanded2.classList.add("display-hide");
+  }
+}
+
+var expandable3 = document.getElementById("expandable3");
+var expanded3 = document.getElementById("expanded3");
+
+expandable3.onclick = function() {
+  if (expandable3.children[1].classList.contains("display-visible")) {
+    expandable3.children[1].classList.remove("display-visible");
+    expandable3.children[1].classList.add("display-hide");
+    expandable3.children[2].classList.remove("display-hide");
+    expandable3.children[2].classList.add("display-visible");
+    expanded3.classList.remove("display-hide");
+    expanded3.classList.add("display-visible");
+  } else {
+    expandable3.children[1].classList.remove("display-hide");
+    expandable3.children[1].classList.add("display-visible");
+    expandable3.children[2].classList.remove("display-visible");
+    expandable3.children[2].classList.add("display-hide");
+    expanded3.classList.remove("display-visible");
+    expanded3.classList.add("display-hide");
+  }
+}
+
+var expandable4 = document.getElementById("expandable4");
+var expanded4 = document.getElementById("expanded4");
+
+expandable4.onclick = function() {
+  if (expandable4.children[1].classList.contains("display-visible")) {
+    expandable4.children[1].classList.remove("display-visible");
+    expandable4.children[1].classList.add("display-hide");
+    expandable4.children[2].classList.remove("display-hide");
+    expandable4.children[2].classList.add("display-visible");
+    expanded4.classList.remove("display-hide");
+    expanded4.classList.add("display-visible");
+  } else {
+    expandable4.children[1].classList.remove("display-hide");
+    expandable4.children[1].classList.add("display-visible");
+    expandable4.children[2].classList.remove("display-visible");
+    expandable4.children[2].classList.add("display-hide");
+    expanded4.classList.remove("display-visible");
+    expanded4.classList.add("display-hide");
+  }
+}
+
+var expandable5 = document.getElementById("expandable5");
+var expanded5 = document.getElementById("expanded5");
+
+expandable5.onclick = function() {
+  if (expandable5.children[1].classList.contains("display-visible")) {
+    expandable5.children[1].classList.remove("display-visible");
+    expandable5.children[1].classList.add("display-hide");
+    expandable5.children[2].classList.remove("display-hide");
+    expandable5.children[2].classList.add("display-visible");
+    expanded5.classList.remove("display-hide");
+    expanded5.classList.add("display-visible");
+  } else {
+    expandable5.children[1].classList.remove("display-hide");
+    expandable5.children[1].classList.add("display-visible");
+    expandable5.children[2].classList.remove("display-visible");
+    expandable5.children[2].classList.add("display-hide");
+    expanded5.classList.remove("display-visible");
+    expanded5.classList.add("display-hide");
+  }
+}
+
+var expandable6 = document.getElementById("expandable6");
+var expanded6 = document.getElementById("expanded6");
+
+expandable6.onclick = function() {
+  if (expandable6.children[1].classList.contains("display-visible")) {
+    expandable6.children[1].classList.remove("display-visible");
+    expandable6.children[1].classList.add("display-hide");
+    expandable6.children[2].classList.remove("display-hide");
+    expandable6.children[2].classList.add("display-visible");
+    expanded6.classList.remove("display-hide");
+    expanded6.classList.add("display-visible");
+  } else {
+    expandable6.children[1].classList.remove("display-hide");
+    expandable6.children[1].classList.add("display-visible");
+    expandable6.children[2].classList.remove("display-visible");
+    expandable6.children[2].classList.add("display-hide");
+    expanded6.classList.remove("display-visible");
+    expanded6.classList.add("display-hide");
+  }
+}
