@@ -61,6 +61,9 @@ var header_account = document.getElementById("header-account");
 var search_bar_cancel = document.getElementById("search-bar-cancel");
 var search_bar = document.getElementById("search-bar");
 var search_bar_search = document.getElementById("search-bar-search");
+var search_bar_cancel_sm = document.getElementById("search-bar-cancel-sm");
+var search_bar_search_sm = document.getElementById("search-bar-search-sm");
+var search_bar_sm_container = document.getElementById("search-bar-sm-container");
 
 header_search_button.onclick = function() {
   if (screen.width > 859) {
@@ -73,6 +76,10 @@ header_search_button.onclick = function() {
     search_bar_cancel.style.display = "inline-block";
     search_bar_search.style.display = "inline-block";
     search_bar.focus();
+  } else {
+    search_bar_cancel_sm.style.display = "inline-block";
+    search_bar_search_sm.style.display = "inline-block";
+    search_bar_sm_container.style.display = "inline-block";
   }
 }
 
@@ -85,4 +92,10 @@ search_bar_cancel.onclick = function() {
   search_bar.style.display = "none";
   search_bar_cancel.style.display = "none";
   search_bar_search.style.display = "none";
+}
+
+search_bar_cancel_sm.onclick = function() {
+  search_bar_cancel_sm.style.display = "none";
+  search_bar_search_sm.style.display = "none";
+  search_bar_sm_container.style.display = "none";
 }
