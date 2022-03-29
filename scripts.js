@@ -65,24 +65,29 @@ var search_bar_cancel_sm = document.getElementById("search-bar-cancel-sm");
 var search_bar_search_sm = document.getElementById("search-bar-search-sm");
 var search_bar_sm_container = document.getElementById("search-bar-sm-container");
 var search_bar_sm = document.getElementById("search-bar-sm");
+var header_sb_sm = document.getElementById("header-search-button-sm");
+var header_search = document.getElementById("header-search");
+var sb_container = document.getElementById("sb-container");
 
 header_search_button.onclick = function() {
-  if (screen.width > 859) {
-    header_nav.style.display = "none";
-    header_collapse.style.display = "none";
-    header_shopping_cart.style.display = "none";
-    header_account.style.display = "none";
-    header_search_button.style.display = "none";
-    search_bar.style.display = "inline-block";
-    search_bar_cancel.style.display = "inline-block";
-    search_bar_search.style.display = "inline-block";
-    search_bar.focus();
-  } else {
-    search_bar_cancel_sm.style.display = "inline-block";
-    search_bar_search_sm.style.display = "inline-block";
-    search_bar_sm_container.style.display = "inline-block";
-    search_bar_sm.focus();
-  }
+  header_search.style.display = "none";
+  header_nav.style.display = "none";
+  header_collapse.style.display = "none";
+  header_shopping_cart.style.display = "none";
+  header_account.style.display = "none";
+  header_search_button.style.display = "none";
+  search_bar.style.display = "inline-block";
+  search_bar_cancel.style.display = "inline-block";
+  search_bar_search.style.display = "inline-block";
+  sb_container.style.display = "inline-block";
+  search_bar.focus();
+}
+
+header_sb_sm.onclick = function() {
+  search_bar_cancel_sm.style.display = "inline-block";
+  search_bar_search_sm.style.display = "inline-block";
+  search_bar_sm_container.style.display = "inline-block";
+  search_bar_sm.focus();
 }
 
 search_bar_cancel.onclick = function() {
@@ -94,6 +99,8 @@ search_bar_cancel.onclick = function() {
   search_bar.style.display = "none";
   search_bar_cancel.style.display = "none";
   search_bar_search.style.display = "none";
+  sb_container.style.display = "none";
+  header_search.style.display = "inline-block";
 }
 
 search_bar_cancel_sm.onclick = function() {
@@ -247,16 +254,19 @@ expandable6.onclick = function() {
 }
 
 //horizontal scroll button
-const btn_previous = document.querySelector(".row-left");
-const btn_next = document.querySelector(".row-right");
 const wrapper = document.querySelector(".main-row-1");
 const max_scroll = wrapper.scrollWidth;
-function test(event) {
-  if (event.target.classList.contains("row-right")) {
-    wrapper.scroll(max_scroll, 0);
-  } else if (event.target.classList.contains("row-left")) {
-    wrapper.scroll((-1 * max_scroll), 0);
+let scrollMovePoint = 0;
+function scrollX(direction) {
+  let operand = 500;
+  if (direction == 'right') {
+    if (scrollMovePoint < max_scroll) {
+      scrollMovePoint += operand;
+    }
+  } else if (direction == 'left') {
+    if (scrollMovePoint > 0) {
+      scrollMovePoint -= operand;
+    }
   }
+  wrapper.scroll(scrollMovePoint, 0);
 }
-btn_previous.addEventListener("click", test);
-btn_next.addEventListener("click", test);
