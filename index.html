@@ -23,7 +23,7 @@
         <div class="header-nav-item button-xbox" id="button-xbox">Xbox</div>
         <div class="header-nav-item" id="button-sale">Sale</div>
         <div class="header-nav-item" id="button-support">Support</div>
-        <div class="header-nav-item" id="button-more">
+        <div class="header-nav-item" id="button-more" onclick="moreButton()">
           <div class="button-more-text">More</div>
           <i class="bi bi-chevron-down" id="button-more-chevron-down"></i>
           <i class="bi bi-chevron-up" id="button-more-chevron-up"></i>
@@ -35,18 +35,18 @@
         </div>
       </div>
       <div class="header-collapse" id="header-collapse">
-        <div class="header-collapse-button" id="header-collapse-button">
+        <div class="header-collapse-button" id="header-collapse-button" onclick="headerCollapseExpand()">
           All Microsoft
           <i class="bi bi-chevron-down" id="header-collapse-button-chevron-down"></i>
           <i class="bi bi-chevron-up" id="header-collapse-button-chevron-up"></i>
         </div>
       </div>
       <div class="header-search" id="header-search">
-        <div class="header-search-button" id="header-search-button">
+        <div class="header-search-button" id="header-search-button" onclick="headerSearchButton()">
           <div class="header-search-button-text">Search</div>
           <i class="bi bi-search"></i>
         </div>
-        <div class="header-search-button header-sb-sm" id="header-search-button-sm">
+        <div class="header-search-button header-sb-sm" id="header-search-button-sm" onclick="headerSbSm()">
           <i class="bi bi-search"></i>
         </div>
       </div>
@@ -63,7 +63,7 @@
           <i class="bi bi-plus"></i>
         </div>
       </div>
-      <div class="header-list" id="header-list">
+      <div class="header-list" id="header-list" onclick="headerList()">
         <i class="bi bi-list" id="list-expand"></i>
         <i class="bi bi-x-lg" id="list-close"></i>
       </div>
@@ -89,7 +89,7 @@
         <div class="list-item">
           <span>Support</span>
         </div>
-        <div class="list-item expandable" id="expandable1">
+        <div class="list-item expandable" id="expandable1" onclick="expandable(0)">
           <span class="item-expand">Software</span>
           <i class="bi bi-chevron-down display-visible"></i>
           <i class="bi bi-chevron-up display-hide"></i>
@@ -114,7 +114,7 @@
             <span>Microsoft Teams</span>
           </div>
         </div>
-        <div class="list-item expandable" id="expandable2">
+        <div class="list-item expandable" id="expandable2" onclick="expandable(1)">
           <span class="item-expand">PCs & Devices</span>
           <i class="bi bi-chevron-down display-visible"></i>
           <i class="bi bi-chevron-up display-hide"></i>
@@ -127,7 +127,7 @@
             <span>Accessories</span>
           </div>
         </div>
-        <div class="list-item expandable" id="expandable3">
+        <div class="list-item expandable" id="expandable3" onclick="expandable(2)">
           <span class="item-expand">Entertainment</span>
           <i class="bi bi-chevron-down display-visible"></i>
           <i class="bi bi-chevron-up display-hide"></i>
@@ -152,7 +152,7 @@
             <span>Movies & TV</span>
           </div>
         </div>
-        <div class="list-item expandable" id="expandable4">
+        <div class="list-item expandable" id="expandable4" onclick="expandable(3)">
           <span class="item-expand">Business</span>
           <i class="bi bi-chevron-down display-visible"></i>
           <i class="bi bi-chevron-up display-hide"></i>
@@ -183,7 +183,7 @@
             <span>Shop Business</span>
           </div>
         </div>
-        <div class="list-item expandable" id="expandable5">
+        <div class="list-item expandable" id="expandable5" onclick="expandable(4)">
           <span class="item-expand">Developer & IT</span>
           <i class="bi bi-chevron-down display-visible"></i>
           <i class="bi bi-chevron-up display-hide"></i>
@@ -214,7 +214,7 @@
             <span>HoloLens 2</span>
           </div>
         </div>
-        <div class="list-item expandable" id="expandable6">
+        <div class="list-item expandable" id="expandable6" onclick="expandable(5)">
           <span class="item-expand">Other</span>
           <i class="bi bi-chevron-down display-visible"></i>
           <i class="bi bi-chevron-up display-hide"></i>
@@ -304,11 +304,11 @@
         <div class="search-bar-search" id="search-bar-search">
            <i class="bi bi-search"></i>
         </div>
-        <div class="search-bar-cancel" id="search-bar-cancel">
+        <div class="search-bar-cancel" id="search-bar-cancel" onclick="searchBarCancel()">
         <span>Cancel</span>
         </div>
       </div>
-      <div class="search-bar-cancel-sm" id="search-bar-cancel-sm">
+      <div class="search-bar-cancel-sm" id="search-bar-cancel-sm" onclick="searchBarCancelSm()">
         <i class="bi bi-arrow-left"></i>
       </div>
       <div class="search-bar-search-sm" id="search-bar-search-sm">
