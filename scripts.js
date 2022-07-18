@@ -32,21 +32,8 @@ var header_list_expand = document.getElementById("header-list-expand");
 var list_expand = document.getElementById("list-expand");
 var list_close = document.getElementById("list-close");
 
-var expandable1 = document.getElementById("expandable1");
-var expanded1 = document.getElementById("expanded1");
-var expandable2 = document.getElementById("expandable2");
-var expanded2 = document.getElementById("expanded2");
-var expandable3 = document.getElementById("expandable3");
-var expanded3 = document.getElementById("expanded3");
-var expandable4 = document.getElementById("expandable4");
-var expanded4 = document.getElementById("expanded4");
-var expandable5 = document.getElementById("expandable5");
-var expanded5 = document.getElementById("expanded5");
-var expandable6 = document.getElementById("expandable6");
-var expanded6 = document.getElementById("expanded6");
-
-let expandables = [expandable1, expandable2, expandable3, expandable4, expandable5, expandable6];
-let expandeds = [expanded1, expanded2, expanded3, expanded4, expanded5, expanded6];
+let expandables = [document.getElementById("expandable1"), document.getElementById("expandable2"), document.getElementById("expandable3"), document.getElementById("expandable4"), document.getElementById("expandable5"), document.getElementById("expandable6")];
+let expandeds = [document.getElementById("expanded1"), document.getElementById("expanded2"), document.getElementById("expanded3"), document.getElementById("expanded4"), document.getElementById("expanded5"), document.getElementById("expanded6")];
 
 //horizontal scroll button
 const wrapper = document.querySelector(".main-row-1");
